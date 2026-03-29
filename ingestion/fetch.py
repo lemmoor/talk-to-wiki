@@ -21,8 +21,6 @@ def fetch_pages():
 
     pages = response["query"]["allpages"]
 
-    # print(pages)
-
     while response.get("continue") and not response.get("batchcomplete"):
         logger.info("Fetching next batch of pages...")
         apcontinue = response["continue"]["apcontinue"]
@@ -60,7 +58,8 @@ if os.path.exists("data/skipped.txt"):
 for page in pages:
     pageid, ns, title = page["pageid"], page["ns"], page["title"]
 
-    if os.path.exists(f"data/pages/{pageid}.json") or pageid in skipped_ids:
+    if os.path.exists(f"data/pages_html/{pageid}.json") or pageid in skipped_ids:
+        logger.info(f"Skipping page ID {pageid} ({title})")
         continue
 
     time.sleep(2)  # be nice to wiki :)
@@ -89,14 +88,15 @@ for page in pages:
         element.decompose()
 
     clean_html = str(soup)
-    markdown = md(clean_html, strip=["img", "a"])
-    markdown = re.sub(r'data-sort-value="[^"]*">?', "", markdown)
+    # this was the old processing befor I realised the multilevel tables are a mess when converted in this way. (process.py handles that)
+    # markdown = md(clean_html, strip=["img", "a"])
+    # markdown = re.sub(r'data-sort-value="[^"]*">?', "", markdown)
 
-    if markdown.strip().startswith("Redirect to:"):
-        logger.info(f"Page {title} ({pageid}) is a redirect, skipping.")
-        with open("data/skipped.txt", "a") as f:
-            f.write(f"{pageid} {title}\n")
-        continue
+    # if markdown.strip().startswith("Redirect to:"):
+    #     logger.info(f"Page {title} ({pageid}) is a redirect, skipping.")
+    #     with open("data/skipped.txt", "a") as f:
+    #         f.write(f"{pageid} {title}\n")
+    #     continue
 
-    with open(f"data/pages/{pageid}.json", "w") as f:
-        json.dump({"title": title, "pageid": pageid, "markdown": markdown}, f)
+    with open(f"data/pages_html/{pageid}.json", "w") as f:
+        json.dump({"title": title, "pageid": pageid, "html": clean_html}, f)
