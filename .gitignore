@@ -1,3 +1,7 @@
 .env
 .notes.md
 /ingestion/data
+
+__pycache__
+
+.DS_Store
