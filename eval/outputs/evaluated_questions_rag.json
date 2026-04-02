@@ -1,0 +1,156 @@
+[
+  {
+    "question": "When is Penny's birthday and who's her mom?",
+    "answer": "Penny's birthday is Fall 2, and her mother is Pam. Source: https://stardewvalleywiki.com/Penny",
+    "reference_answer": "Penny's birthday is Fall 2. Her mother is Pam.",
+    "rating": 5,
+    "justification": "Matches the correct answer exactly: Penny's birthday is Fall 2 and her mother is Pam. The added source link is fine."
+  },
+  {
+    "question": "What gifts does Haley love? I keep giving her stuff and she hates it.",
+    "answer": "I don\u2019t know. The Haley pages describe how she responds to loved, liked, neutral, and disliked gifts, but they do not list which specific gifts are loved. Source: https://stardewvalleywiki.com/Haley",
+    "reference_answer": "Haley's four NPC-specific loved gifts are Coconut, Fruit Salad, Pink Cake, and Sunflower. Notably, Haley is one of the only characters who hates the Prismatic Shard, which is otherwise a universal love.",
+    "rating": 1,
+    "justification": "The answer is incorrect. Haley\u2019s specific loved gifts are Coconut, Fruit Salad, Pink Cake, and Sunflower, and the response wrongly claims the gifts are not listed."
+  },
+  {
+    "question": "I'm confused about Sebastian's family \u2014 how is he related to Robin, Demetrius, and Maru?",
+    "answer": "Sebastian\u2019s relationships with them are:\n- Robin: his mother\n- Demetrius: his step-father\n- Maru: his half-sister (Robin\u2019s daughter with Demetrius)\n\nSources:\n- Sebastian page: https://stardewvalleywiki.com/Sebastian\n- Demetrius page: https://stardewvalleywiki.com/Demetrius\n- Robin page: https://stardewvalleywiki.com/Robin\n- Maru page: https://stardewvalleywiki.com/Maru",
+    "reference_answer": "Robin is Sebastian's mother and Maru's mother. Demetrius is Maru's father and Sebastian's stepfather. Sebastian and Maru are half-siblings. Sebastian's biological father is unknown. They all live together at the Carpenter's Shop in the mountains north of Pelican Town.",
+    "rating": 4,
+    "justification": "The answer is correct about the family relationships: Robin is Sebastian\u2019s mother, Demetrius is his stepfather, and Maru is his half-sister. However, it is a bit less specific than the reference because it omits that Sebastian\u2019s biological father is unknown and that they all live together at the Carpenter\u2019s Shop."
+  },
+  {
+    "question": "I got a heart event with Caroline and she taught me a recipe \u2014 what was it and how do I trigger it again on my other save?",
+    "answer": "- The recipe is Parsnip Soup. This is sent to you by mail when you reach three hearts with Caroline.\n\n- To trigger it again on another save, you need to reach three hearts with Caroline again; at that point she will mail you the Parsnip Soup recipe.\n\nSource: https://stardewvalleywiki.com/Caroline",
+    "reference_answer": "Caroline teaches the player the Tea Sapling recipe. The event is triggered by entering the sunroom via the door in Caroline's kitchen between 9:00 AM and 5:00 PM on a non-rainy day, after reaching 2 hearts of friendship with her.",
+    "rating": 2,
+    "justification": "Mostly wrong. It identifies the wrong recipe (Parsnip Soup instead of Tea Sapling) and the wrong trigger (3-heart mail instead of Caroline\u2019s 2-heart sunroom event between 9 AM and 5 PM on a non-rainy day). The only relevant grain of truth is that it involves Caroline and friendship-related recipe unlocks."
+  },
+  {
+    "question": "How much does Starfruit sell for and how long does it take to grow?",
+    "answer": "- Sell price: 750g (base price). \n- Growth time: 13 days.\n\nSources:\n- Starfruit: Growth Time 13 days; Sells For: 750g (base) [https://stardewvalleywiki.com/Starfruit]\n- Crops (Starfruit entry confirms base sell value of 750g) [https://stardewvalleywiki.com/Crops]",
+    "reference_answer": "Starfruit has a base sell price of 750g. It takes 13 days to grow, is a Summer-only crop, and does not regrow after harvest. Starfruit Seeds cost 400g at the Oasis.",
+    "rating": 5,
+    "justification": "The answer correctly gives Starfruit\u2019s base sell price (750g) and growth time (13 days), which directly answers the question. It omits extra reference details like Summer-only, no regrowth, and seed cost, but those were not asked for."
+  },
+  {
+    "question": "I just found an Ancient Seed \u2014 how long until I get fruit from it and does it keep producing?",
+    "answer": "- Time to first fruit: 28 days from planting.\n- Does it keep producing: Yes. After the first harvest, the Ancient Fruit plant regrows and yields another fruit every 7 days.\n\nSeason availability: Spring, Summer, or Fall.\n\nSources:\n- Ancient Fruit page: https://stardewvalleywiki.com/Ancient_Fruit\n- Ancient Seeds page (context on seeds): https://stardewvalleywiki.com/Ancient_Seeds",
+    "reference_answer": "Ancient Fruit takes 28 days to grow to maturity. After the first harvest, it regrows and produces another fruit every 7 days. It grows in Spring, Summer, and Fall (dies in Winter outdoors). Its base sell price is 550g.",
+    "rating": 4,
+    "justification": "Correct and directly answers the question: Ancient Fruit takes 28 days, then regrows every 7 days, and it grows in Spring/Summer/Fall. However, it is a bit less specific than the reference because it omits that it dies outdoors in Winter and does not mention the base sell price."
+  },
+  {
+    "question": "I got some Coffee Beans \u2014 how do I grow them and turn them into Coffee?",
+    "answer": "Here's how to grow Coffee Beans and turn them into Coffee:\n\nGrowing\n- Plant Coffee Beans in Spring or Summer (both seasons work the same).\n- A Coffee Bean plant grows for about 10 days before maturing.\n- After maturity, the plant continues to yield: each harvest gives 4 Coffee Beans, with a 2% chance for more beans.\n- Each harvest happens every 2 days after the plant is grown.\n- Fertilizers affect only the first bean from every harvest.\n\nTurning into Coffee\n- To craft Coffee, put 5 Coffee Beans from the same stack into a Keg. You cannot mix different quality levels in the same Keg, and the Keg accepts 5 beans at a time.\n- Crafting Coffee takes 120 minutes (2 hours) in the Keg.\n\nNotes\n- Coffee Beans can be found from Dust Sprites (rare drop) or Traveling Cart, and they are seed that can be planted and harvested.\n\nSources:\n- Coffee Bean: https://stardewvalleywiki.com/Coffee_Bean\n- Crops: https://stardewvalleywiki.com/Crops",
+    "reference_answer": "Coffee Beans take 10 days to grow to maturity, then produce a new harvest every 2 days. Each harvest yields 4 Coffee Beans. Placing 5 Coffee Beans in a Keg produces Coffee in 2 in-game hours, which sells for 150g. Coffee Beans grow in both Spring and Summer.",
+    "rating": 4,
+    "justification": "Mostly correct and more detailed than the reference: it correctly gives Spring/Summer planting, 10 days to mature, harvests every 2 days, 4 beans per harvest, and 5 beans in a Keg for 2 in-game hours. However, it adds questionable/unnecessary specifics like a '2% chance for more beans' and the same-stack/quality restriction, so it isn't a clean full-accuracy 5."
+  },
+  {
+    "question": "How is the sell price for jelly and pickles calculated? Also, which crops can become giant crops?",
+    "answer": "- Sell price calculation for jelly and pickles:\n  - Jelly sells for 2 \u00d7 Base Fruit Price + 50 (the quality of the fruit does not affect the price).\n  - Pickles sell for 2 \u00d7 Base Vegetable Price + 50 (the quality of the vegetable does not affect the price).\n  - Source: Jellies and Pickles (Preserves Jar) - https://stardewvalleywiki.com/Jellies_and_Pickles\n\n- Giant crops:\n  - I don\u2019t know based on the provided documents. The sources given do not specify which crops can become giant crops.",
+    "reference_answer": "The Preserves Jar formula is (2 \u00d7 Base Crop Value) + 50g. Input quality does not affect the output price; only base value matters. Processing takes 4,000 in-game minutes (~2-3 days). The giant crop-eligible crops are Cauliflower (Spring), Melon (Summer), Pumpkin (Fall), Powdermelon (Winter), and Qi Fruit (year-round). Giant crops must be planted in a 3\u00d73 grid of the same type.",
+    "rating": 3,
+    "justification": "The preserves jar pricing is correctly stated: jelly and pickles sell for (2 \u00d7 base fruit/vegetable value) + 50, and input quality does not matter. However, it omits the processing time, and it completely fails to answer the giant crop part, which should name Cauliflower, Melon, Pumpkin, Powdermelon, and Qi Fruit (with the 3\u00d73 condition). So this is only partially correct overall."
+  },
+  {
+    "question": "Where do I find Iron Ore in the mines, and what do I get for reaching the bottom?",
+    "answer": "- Where to find Iron Ore in the mines:\n  - In The Mines, Iron Nodes appear on floors 40\u201379 (and iron ore drops from those nodes on floors 41\u201379 specifically). The Mines page lists Iron Ore as found on floors 40\u201379, and the Iron Ore page notes you mine Iron Nodes in the Mines (Floors 41\u201379) with a pickaxe.\n  - Iron Ore can also be found on Skull Cavern floors and the Volcano Dungeon, as well as in other locations, but in the Mines you\u2019ll mostly find it on floors 40\u201379.\n\n  Sources:\n  - Iron Ore: Mines \u2022 Blacksmith \u2022 Fishing \u2022 Geodes \u2022 Panning \u2022 Traveling Cart. https://stardewvalleywiki.com/Iron_Ore\n  - Mining (Iron Node): Location (The Mines): Floors 40-79; Location (Other): Quarry Skull Cavern Quarry Mine Hill-top and Four Corners farm maps after Mining Skill level 4 Volcano Dungeon. https://stardewvalleywiki.com/Mining\n  - The Mines: Iron Ore drop presence by floor. https://stardewvalleywiki.com/The_Mines\n\n- What you get for reaching the bottom:\n  - The provided documents do not specify any reward or outcome specifically tied to \"reaching the bottom\" of the Mines. Therefore, I don\u2019t have information in these documents about a bottom-reach reward.\n\n  Sources:\n  - The Mines overview (no bottom reward described). https://stardewvalleywiki.com/The_Mines\n  - Iron Ore and Mining pages (no bottom-reward detail). https://stardewvalleywiki.com/Iron_Ore https://stardewvalleywiki.com/Mining\n\nIf you want, I can check other sections or pages for any mention of a bottom-floor reward, but based on the provided documents, there isn\u2019t a stated bottom-reward.",
+    "reference_answer": "Iron Ore primarily appears on floors 41-79 (the frozen/ice section). Floor 120 awards the Skull Key, which is used to access the Skull Cavern in the Calico Desert. The Mines have 120 floors divided into three 40-floor sections: copper ore (1-39), iron ore (41-79), and gold ore (81-119).",
+    "rating": 3,
+    "justification": "The answer is correct about Iron Ore being found in the mid mine levels, especially floors 41\u201379, though it is a bit muddled by also saying 40\u201379. However, it misses the major second part: reaching floor 120 gives the Skull Key, which unlocks Skull Cavern. Because it gets one part mostly right but fails the important reward part, this is only partially correct."
+  },
+  {
+    "question": "What do I need to craft an Iridium Sprinkler and how big is the area it waters?",
+    "answer": "- Crafting requirements: Gold Bar (1), Iridium Bar (1), Battery Pack (1); requires Farming Level 9 to craft.\n- Watering area: Waters 24 adjacent tiles each morning (a 5x5 area), and only tilled tiles are watered.\n\nSources:\n- https://stardewvalleywiki.com/Iridium_Sprinkler\n- https://stardewvalleywiki.com/Crafting",
+    "reference_answer": "The Iridium Sprinkler requires 1 Gold Bar, 1 Iridium Bar, and 1 Battery Pack to craft. It is unlocked at Farming Level 9 and waters 24 adjacent tiles (a 5\u00d75 area with the sprinkler in the center). It can also be purchased from Krobus every Friday for 10,000g.",
+    "rating": 5,
+    "justification": "The answer correctly lists the Iridium Sprinkler\u2019s crafting materials, the Farming Level 9 unlock, and the exact watering coverage of 24 tiles in a 5\u00d75 area with the sprinkler in the center. It is fully correct for the question asked; the omitted Krobus purchase detail is extra reference info, not required here."
+  },
+  {
+    "question": "How much does it cost to upgrade my tools at the blacksmith? I want to plan ahead.",
+    "answer": "- Upgrades are done in order (Copper \u2192 Steel \u2192 etc.) and each upgrade takes two days.\n- Copper upgrade: costs 2,000g and requires 5 Copper Bars.\n  - Source: Copper Bar page (Tool Upgrades section) and Tools page notes about upgrades taking two days. https://stardewvalleywiki.com/Copper_Bar https://stardewvalleywiki.com/Tools\n- Steel (second) upgrade: costs 5,000g and requires 5 Iron Bars.\n  - Source: Iron Bar page (Tool Upgrades) and Tools page. https://stardewvalleywiki.com/Iron_Bar https://stardewvalleywiki.com/Tools\n- (Examples) Steel tools, when upgraded, cost 5,000g and require 5 Iron Bars; Steel Trash Can costs 2,500g (also requires Iron Bars) as part of steel-upgrade options. https://stardewvalleywiki.com/Iron_Bar https://stardewvalleywiki.com/Blacksmith\n\nIf you want a quick planning reference: expect to pay 2,000g + 5 Copper Bars for the first upgrade, then 5,000g + 5 Iron Bars for the second upgrade, with each upgrade taking two in-game days.",
+    "reference_answer": "Each upgrade requires 5 bars of the corresponding metal plus a gold fee: Copper = 5 Copper Bars + 2,000g; Steel = 5 Iron Bars + 5,000g; Gold = 5 Gold Bars + 10,000g; Iridium = 5 Iridium Bars + 25,000g. Each upgrade takes 2 days to complete, and upgrades must be done sequentially.",
+    "rating": 3,
+    "justification": "Partially correct: it correctly states upgrades are sequential, take 2 days, and gives the right cost/materials for Copper and Steel. However, it omits the Gold and Iridium upgrade costs, which are important for planning ahead, and includes a potentially distracting Trash Can detail."
+  },
+  {
+    "question": "How much gold do I need to complete all the Vault bundles, and what's the reward?",
+    "answer": "- Total gold required to complete all Vault bundles: 42,500g\n- Reward on completion: Repairs the Bus Stop, granting access to The Calico Desert (taking the Bus to travel there)\n\nSources:\n- https://stardewvalleywiki.com/Bundles\n- https://stardewvalleywiki.com/Remixed_Bundles",
+    "reference_answer": "The Vault bundles cost a total of 42,500g (broken down as 2,500g + 5,000g + 10,000g + 25,000g). They require only gold, no items. Completing all Vault bundles repairs the Bus at the Bus Stop, granting access to the Calico Desert.",
+    "rating": 4,
+    "justification": "Correct total cost and correct reward/access outcome. It\u2019s useful and accurate, but less specific than the reference because it omits the bundle cost breakdown and the note that the Vault requires only gold, no items."
+  },
+  {
+    "question": "I donated all four Dwarf Scrolls to the museum \u2014 what do I get?",
+    "answer": "You unlock the Dwarvish Translation Guide. Donating all four Dwarf Scrolls grants this guide, which lets you understand the dwarven language and read the rightmost gravestone (and communicate with dwarves in the Mines and Volcano Dungeon). Source: Dwarf Scroll I, II, III, IV pages and the Dwarvish Translation Guide page.\n\nCited sources:\n- https://stardewvalleywiki.com/Dwarf_Scroll_I\n- https://stardewvalleywiki.com/Dwarf_Scroll_II\n- https://stardewvalleywiki.com/Dwarf_Scroll_III\n- https://stardewvalleywiki.com/Dwarf_Scroll_IV\n- https://stardewvalleywiki.com/Dwarvish_Translation_Guide",
+    "reference_answer": "The player receives the Dwarvish Translation Guide from Gunther. This allows the player to understand and communicate with the Dwarf in the Mines and the Volcano Dungeon. To physically reach the Dwarf, the player must break a rock near the mine entrance using at least a Steel Pickaxe or a Cherry Bomb.",
+    "rating": 4,
+    "justification": "The answer is correct: donating all four Dwarf Scrolls rewards the Dwarvish Translation Guide, which lets you understand/communicate with the Dwarf in the Mines and Volcano Dungeon. The added gravestone detail is also correct. However, it is slightly less specific than the reference because it does not mention that Gunther gives the reward, nor the note about needing to break the rock to physically reach the Dwarf."
+  },
+  {
+    "question": "When is the Stardew Valley Fair and how many Star Tokens do I need for the Stardrop?",
+    "answer": "- When: The Stardew Valley Fair takes place on Tuesday, Fall 16 every year. https://stardewvalleywiki.com/Stardew_Valley_Fair\n- Stardrop cost: The Stardrop is sold for 2,000 Star Tokens at the Fair. https://stardewvalleywiki.com/Stardew_Valley_Fair",
+    "reference_answer": "The Stardew Valley Fair is held on Fall 16 (9:00 AM to 3:00 PM in Pelican Town). The Stardrop costs 2,000 Star Tokens and is a one-time purchase. Winning 1st place in the Grange Display contest awards 1,000 Star Tokens.",
+    "rating": 4,
+    "justification": "Correct on the two things asked: the Fair is on Fall 16 each year, and the Stardrop costs 2,000 Star Tokens. 'Tuesday' is also correct. However, it is less specific than the reference because it omits the event time (9:00 AM to 3:00 PM), location (Pelican Town), and the note that the Stardrop is a one-time purchase."
+  },
+  {
+    "question": "There's some war mentioned in the game \u2014 who's fighting who and which character was involved?",
+    "answer": "- Who\u2019s fighting: The Gotoro Empire is fighting against the Ferngill Republic (where Stardew Valley is located). Source: https://stardewvalleywiki.com/Gotoro_Empire\n- Which character was involved: Kent is a soldier who fights against the Gotoro Empire; he returns in Spring of Year 2 after fighting overseas, and his son Sam mentions him fighting against the Gotoro Empire. Source: https://stardewvalleywiki.com/Gotoro_Empire\n\n(Additional context about mentions of the war appears in the same Gotoro Empire article; no other specific named combatants are provided in the documents.)",
+    "reference_answer": "The Ferngill Republic and the Gotoro Empire are the two warring nations. Kent served in the Ferngill Republic's army and was held in a Gotoro prison camp. He returns to Pelican Town at the beginning of Spring, Year 2, reuniting with his wife Jodi and sons Sam and Vincent.",
+    "rating": 4,
+    "justification": "Correct on the two nations at war and correctly identifies Kent as the involved character who returns in Spring of Year 2 after serving overseas. However, it omits the specific detail that Kent served in the Ferngill Republic army and was held in a Gotoro prison camp, so it is less specific than the reference."
+  },
+  {
+    "question": "I'm going the Joja route \u2014 how much does each project on the development form cost?",
+    "answer": "Here are the costs for each development when going the Joja route:\n\n- Bus to the Desert: 40,000g\n- Bridge to the Quarry: 25,000g\n- Removes the glittering boulder, allowing panning: 20,000g\n- Minecarts: 15,000g\n- Greenhouse: 35,000g\n\nTotal to complete all developments: 135,000g (140,000g including the Joja membership purchase). Source: Joja Community Development Form (https://stardewvalleywiki.com/Joja_Community_Development_Form).",
+    "reference_answer": "The five Joja projects cost: Bus Repair \u2014 40,000g, Minecarts \u2014 15,000g, Bridge (Quarry) \u2014 25,000g, Greenhouse \u2014 35,000g, Glittering Boulder Removal \u2014 20,000g. The total is 135,000g for all five projects. The JojaMart membership itself costs an additional 5,000g, bringing the grand total to 140,000g.",
+    "rating": 5,
+    "justification": "Fully correct and as specific as the reference. It lists all five Joja development costs accurately and gives both the 135,000g project total and 140,000g total including the 5,000g membership."
+  },
+  {
+    "question": "How do I get the Galaxy Sword? I heard it's in the desert somewhere.",
+    "answer": "- You obtain the Galaxy Sword by taking a Prismatic Shard to the Three Pillars in the Calico Desert. While holding the Prismatic Shard, step onto the centermost tile between the three pillars; the shard will be consumed and the Galaxy Sword appears. (Location: The Desert, at the Three Pillars) [Source: Galaxy Sword; Weapons; Secrets]\n- A hint to how to obtain it is found by reading the Dwarvish headstone in the Graveyard after you have the Dwarvish Translation Guide (which you get by donating all four Dwarf Scrolls to the Museum). The hint points you toward the Desert and the three pillars to the northeast. [Source: Galaxy Sword; Secrets]\n- After you obtain the Galaxy Sword, you can no longer use Prismatic Shards to obtain another. If you lose or sell the sword, you can buy it again from Marlon for 50,000g. Obtaining the Galaxy Sword also unlocks the Galaxy Hammer and Galaxy Dagger in the Adventurer\u2019s Guild shop. [Sources: Galaxy Sword; Adventurer's Guild; Weapons]\n\nCited sources:\n- https://stardewvalleywiki.com/Galaxy_Sword\n- https://stardewvalleywiki.com/Adventurer%27s_Guild\n- https://stardewvalleywiki.com/Weapons\n- https://stardewvalleywiki.com/Secrets",
+    "reference_answer": "The player must hold a Prismatic Shard and walk to the centermost tile between the Three Pillars in the Calico Desert. This consumes the Prismatic Shard and awards the Galaxy Sword. If lost, it can be repurchased from Marlon at the Adventurer's Guild for 50,000g. Obtaining it also unlocks the Galaxy Hammer and Galaxy Dagger for purchase.",
+    "rating": 5,
+    "justification": "Fully correct and more specific than the reference. It accurately explains bringing a Prismatic Shard to the centermost tile between the Three Pillars in the Calico Desert, notes the shard is consumed, and correctly includes repurchase from Marlon for 50,000g plus unlocking the Galaxy Hammer and Galaxy Dagger. The extra graveyard hint is also correct."
+  },
+  {
+    "question": "I found Secret Note #23 about bringing something to the Secret Woods \u2014 what do I bring and what happens?",
+    "answer": "You bring Maple Syrup. When you enter the Secret Woods between 6am and 7pm with Maple Syrup and have the Strange Note quest active, a cutscene occurs in which a bear shares his special knowledge of berries. This permanently increases the sell price of Blackberries and Salmonberries by 3x. After the cutscene, a bear's paw icon labeled \"Bear's Knowledge\" appears in the Special Items & Powers tab. (Source: Secret Notes; Secret Woods; Quests)  \n- Secret Note #23: https://stardewvalleywiki.com/Secret_Notes  \n- Secret Woods: https://stardewvalleywiki.com/Secret_Woods  \n- Quests (Strange Note): https://stardewvalleywiki.com/Quests",
+    "reference_answer": "The player must bring Maple Syrup to the Secret Woods (between 6:00 AM and 7:00 PM) to trigger a cutscene with a bear. This grants Bear's Knowledge, which permanently triples the sell price of Blackberries and Salmonberries.",
+    "rating": 5,
+    "justification": "Fully correct and more specific than the reference: it correctly identifies Maple Syrup, the 6:00 AM\u20137:00 PM timing, the Secret Woods cutscene with the bear, and the reward of Bear's Knowledge tripling Blackberry and Salmonberry sell prices. Extra details are accurate."
+  },
+  {
+    "question": "I want to forge my Galaxy Sword into the Infinity Blade \u2014 what materials do I need exactly?",
+    "answer": "To forge the Infinity Blade, you need:\n- Galaxy Sword (1)\n- Galaxy Soul (3)\n- Cinder Shard (60)\n\nYou apply Galaxy Souls to the Galaxy Weapon 3 times (costing a total of 3 Galaxy Souls and 60 Cinder Shards) to obtain the Infinity Weapon. The Infinity Blade specifically is the Infinity form of the Galaxy Sword with those exact ingredients.\n\nSources:\n- Galaxy Soul: https://stardewvalleywiki.com/Galaxy_Soul\n- Forge: https://stardewvalleywiki.com/Forge\n- Infinity Blade: https://stardewvalleywiki.com/Infinity_Blade\n- Weapons (Galaxy Sword entry references the process): https://stardewvalleywiki.com/Weapons",
+    "reference_answer": "Upgrading the Galaxy Sword to the Infinity Blade requires 3 Galaxy Souls and 60 Cinder Shards total, applied across 3 separate forging sessions (each session consumes 1 Galaxy Soul + 20 Cinder Shards). The Forge is located at the top of the Volcano Dungeon on Ginger Island.",
+    "rating": 5,
+    "justification": "The answer is fully correct on the required materials and process: 3 Galaxy Souls and 60 Cinder Shards total, applied in 3 separate forge uses, starting from a Galaxy Sword. It does not mention the Forge location, but since the question asked specifically for the materials needed, this omission does not reduce correctness."
+  },
+  {
+    "question": "How do I get the Junimo Plush? I saw something about it being hidden somewhere in town.",
+    "answer": "You can get the Junimo Plush by interacting with the bush in the northwest corner of Pelican Town on the 28th of any season at exactly 12:00 PM. If you lose the original, you can buy a replacement at the Lost Items Shop in the Secret Woods for 10,000g. (Sources: https://stardewvalleywiki.com/Junimo_Plush)",
+    "reference_answer": "The Junimo Plush can be obtained at exactly 12:00 PM (noon) on the 28th (last day) of any season by shaking the bush above the playground in the northwest corner of Pelican Town. This is hinted at by Secret Note #13.",
+    "rating": 4,
+    "justification": "Correct overall: it\u2019s obtained at noon on the 28th by interacting/shaking the hidden bush in northwest Pelican Town. However, it\u2019s less specific than the reference because it omits that the bush is above the playground and doesn\u2019t mention the Secret Note #13 hint. The extra replacement info may be useful, but the main answer is still slightly less specific than the reference."
+  },
+  {
+    "question": "How do I make blue chickens?",
+    "answer": "- You get blue chickens by buying them from Marnie\u2019s Ranch after seeing Shane\u2019s 8-heart event. Each chicken purchased has a 25% chance of being blue. (Blue chickens cannot be obtained from incubators.)\n- Note: Incubators hatch white or brown chickens from white/brown eggs; blue cannot be hatched this way. (After the event, a random purchase may be blue.) \n\nSources:\n- https://stardewvalleywiki.com/Chicken\n- https://stardewvalleywiki.com/Incubator\n- https://stardewvalleywiki.com/Animals",
+    "reference_answer": "After reaching 8 hearts of friendship with Shane, a cutscene triggers where he shows you his blue chicken, Charlie. After this event, any chicken purchased from Marnie's Ranch or hatched in an incubator has a chance of being blue. Blue chickens function identically to white and brown chickens and produce regular eggs.",
+    "rating": 3,
+    "justification": "Partially correct: it correctly says you need Shane\u2019s 8-heart event before blue chickens become available, and that purchased chickens can then be blue. However, it incorrectly says blue chickens cannot come from incubators; the reference says incubator-hatched chickens can also be blue after the event. That\u2019s a significant factual error, so this is not a 4 or 5."
+  },
+  {
+    "question": "How do I raise a dinosaur?",
+    "answer": "To raise a dinosaur:\n\n- Get a Dinosaur Egg.\n- Place the Dinosaur Egg in an Incubator inside a Big Coop. Incubation takes about 11 days 6 hours 40 minutes (18,000m), or about 5 days 16 hours 40 minutes (9,000m) if you have the Coopmaster Profession.\n- After hatching, raise the dinosaur (keep it fed). A mature and fed dinosaur will produce a Dinosaur Egg every 7 days.\n- You can place that Dinosaur Egg back into an Incubator to hatch another dinosaur, continuing the cycle.\n\nNotes:\n- Dinosaur Eggs can also be turned into Dinosaur Mayonnaise in a Mayonnaise Machine (optional), which sells for 800g.\n- The dinosaur\u2019s hatching and egg production are described here: https://stardewvalleywiki.com/Dinosaur and https://stardewvalleywiki.com/Dinosaur_Egg.",
+    "reference_answer": "You need to find a Dinosaur Egg (from artifact spots, fishing treasure chests, Skull Cavern Pepper Rex drops, or the Crane Game in the Movie Theater) and place it in an Incubator inside a Big or Deluxe Coop. After about 12 days it will hatch into a Dinosaur, which produces a new Dinosaur Egg every 7 days. Do not donate your first Dinosaur Egg to the museum \u2014 incubate it first so you can get more.",
+    "rating": 4,
+    "justification": "Correct and useful: it explains that you need a Dinosaur Egg, incubate it in a Big Coop, and that the hatched dinosaur produces another egg every 7 days. The incubation timing detail and Mayo note are fine. However, it\u2019s less complete than the reference because it doesn\u2019t say where to find the first Dinosaur Egg and omits the important tip not to donate your first one to the museum."
+  }
+]

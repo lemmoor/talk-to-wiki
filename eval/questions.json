@@ -1,0 +1,134 @@
+[
+  {
+    "question": "When is Penny's birthday and who's her mom?",
+    "answer": "Penny's birthday is Fall 2. Her mother is Pam.",
+    "difficulty": "easy",
+    "category": "characters"
+  },
+  {
+    "question": "What gifts does Haley love? I keep giving her stuff and she hates it.",
+    "answer": "Haley's four NPC-specific loved gifts are Coconut, Fruit Salad, Pink Cake, and Sunflower. Notably, Haley is one of the only characters who hates the Prismatic Shard, which is otherwise a universal love.",
+    "difficulty": "medium",
+    "category": "characters"
+  },
+  {
+    "question": "I'm confused about Sebastian's family — how is he related to Robin, Demetrius, and Maru?",
+    "answer": "Robin is Sebastian's mother and Maru's mother. Demetrius is Maru's father and Sebastian's stepfather. Sebastian and Maru are half-siblings. Sebastian's biological father is unknown. They all live together at the Carpenter's Shop in the mountains north of Pelican Town.",
+    "difficulty": "easy",
+    "category": "characters"
+  },
+  {
+    "question": "I got a heart event with Caroline and she taught me a recipe — what was it and how do I trigger it again on my other save?",
+    "answer": "Caroline teaches the player the Tea Sapling recipe. The event is triggered by entering the sunroom via the door in Caroline's kitchen between 9:00 AM and 5:00 PM on a non-rainy day, after reaching 2 hearts of friendship with her.",
+    "difficulty": "hard",
+    "category": "characters"
+  },
+  {
+    "question": "How much does Starfruit sell for and how long does it take to grow?",
+    "answer": "Starfruit has a base sell price of 750g. It takes 13 days to grow, is a Summer-only crop, and does not regrow after harvest. Starfruit Seeds cost 400g at the Oasis.",
+    "difficulty": "easy",
+    "category": "farming"
+  },
+  {
+    "question": "I just found an Ancient Seed — how long until I get fruit from it and does it keep producing?",
+    "answer": "Ancient Fruit takes 28 days to grow to maturity. After the first harvest, it regrows and produces another fruit every 7 days. It grows in Spring, Summer, and Fall (dies in Winter outdoors). Its base sell price is 550g.",
+    "difficulty": "easy",
+    "category": "farming"
+  },
+  {
+    "question": "I got some Coffee Beans — how do I grow them and turn them into Coffee?",
+    "answer": "Coffee Beans take 10 days to grow to maturity, then produce a new harvest every 2 days. Each harvest yields 4 Coffee Beans. Placing 5 Coffee Beans in a Keg produces Coffee in 2 in-game hours, which sells for 150g. Coffee Beans grow in both Spring and Summer.",
+    "difficulty": "medium",
+    "category": "farming"
+  },
+  {
+    "question": "How is the sell price for jelly and pickles calculated? Also, which crops can become giant crops?",
+    "answer": "The Preserves Jar formula is (2 × Base Crop Value) + 50g. Input quality does not affect the output price; only base value matters. Processing takes 4,000 in-game minutes (~2-3 days). The giant crop-eligible crops are Cauliflower (Spring), Melon (Summer), Pumpkin (Fall), Powdermelon (Winter), and Qi Fruit (year-round). Giant crops must be planted in a 3×3 grid of the same type.",
+    "difficulty": "hard",
+    "category": "farming"
+  },
+  {
+    "question": "Where do I find Iron Ore in the mines, and what do I get for reaching the bottom?",
+    "answer": "Iron Ore primarily appears on floors 41-79 (the frozen/ice section). Floor 120 awards the Skull Key, which is used to access the Skull Cavern in the Calico Desert. The Mines have 120 floors divided into three 40-floor sections: copper ore (1-39), iron ore (41-79), and gold ore (81-119).",
+    "difficulty": "easy",
+    "category": "mechanics"
+  },
+  {
+    "question": "What do I need to craft an Iridium Sprinkler and how big is the area it waters?",
+    "answer": "The Iridium Sprinkler requires 1 Gold Bar, 1 Iridium Bar, and 1 Battery Pack to craft. It is unlocked at Farming Level 9 and waters 24 adjacent tiles (a 5×5 area with the sprinkler in the center). It can also be purchased from Krobus every Friday for 10,000g.",
+    "difficulty": "medium",
+    "category": "mechanics"
+  },
+  {
+    "question": "How much does it cost to upgrade my tools at the blacksmith? I want to plan ahead.",
+    "answer": "Each upgrade requires 5 bars of the corresponding metal plus a gold fee: Copper = 5 Copper Bars + 2,000g; Steel = 5 Iron Bars + 5,000g; Gold = 5 Gold Bars + 10,000g; Iridium = 5 Iridium Bars + 25,000g. Each upgrade takes 2 days to complete, and upgrades must be done sequentially.",
+    "difficulty": "medium",
+    "category": "mechanics"
+  },
+  {
+    "question": "How much gold do I need to complete all the Vault bundles, and what's the reward?",
+    "answer": "The Vault bundles cost a total of 42,500g (broken down as 2,500g + 5,000g + 10,000g + 25,000g). They require only gold, no items. Completing all Vault bundles repairs the Bus at the Bus Stop, granting access to the Calico Desert.",
+    "difficulty": "hard",
+    "category": "mechanics"
+  },
+  {
+    "question": "I donated all four Dwarf Scrolls to the museum — what do I get?",
+    "answer": "The player receives the Dwarvish Translation Guide from Gunther. This allows the player to understand and communicate with the Dwarf in the Mines and the Volcano Dungeon. To physically reach the Dwarf, the player must break a rock near the mine entrance using at least a Steel Pickaxe or a Cherry Bomb.",
+    "difficulty": "easy",
+    "category": "lore"
+  },
+  {
+    "question": "When is the Stardew Valley Fair and how many Star Tokens do I need for the Stardrop?",
+    "answer": "The Stardew Valley Fair is held on Fall 16 (9:00 AM to 3:00 PM in Pelican Town). The Stardrop costs 2,000 Star Tokens and is a one-time purchase. Winning 1st place in the Grange Display contest awards 1,000 Star Tokens.",
+    "difficulty": "medium",
+    "category": "lore"
+  },
+  {
+    "question": "There's some war mentioned in the game — who's fighting who and which character was involved?",
+    "answer": "The Ferngill Republic and the Gotoro Empire are the two warring nations. Kent served in the Ferngill Republic's army and was held in a Gotoro prison camp. He returns to Pelican Town at the beginning of Spring, Year 2, reuniting with his wife Jodi and sons Sam and Vincent.",
+    "difficulty": "medium",
+    "category": "lore"
+  },
+  {
+    "question": "I'm going the Joja route — how much does each project on the development form cost?",
+    "answer": "The five Joja projects cost: Bus Repair — 40,000g, Minecarts — 15,000g, Bridge (Quarry) — 25,000g, Greenhouse — 35,000g, Glittering Boulder Removal — 20,000g. The total is 135,000g for all five projects. The JojaMart membership itself costs an additional 5,000g, bringing the grand total to 140,000g.",
+    "difficulty": "hard",
+    "category": "lore"
+  },
+  {
+    "question": "How do I get the Galaxy Sword? I heard it's in the desert somewhere.",
+    "answer": "The player must hold a Prismatic Shard and walk to the centermost tile between the Three Pillars in the Calico Desert. This consumes the Prismatic Shard and awards the Galaxy Sword. If lost, it can be repurchased from Marlon at the Adventurer's Guild for 50,000g. Obtaining it also unlocks the Galaxy Hammer and Galaxy Dagger for purchase.",
+    "difficulty": "easy",
+    "category": "niche"
+  },
+  {
+    "question": "I found Secret Note #23 about bringing something to the Secret Woods — what do I bring and what happens?",
+    "answer": "The player must bring Maple Syrup to the Secret Woods (between 6:00 AM and 7:00 PM) to trigger a cutscene with a bear. This grants Bear's Knowledge, which permanently triples the sell price of Blackberries and Salmonberries.",
+    "difficulty": "medium",
+    "category": "niche"
+  },
+  {
+    "question": "I want to forge my Galaxy Sword into the Infinity Blade — what materials do I need exactly?",
+    "answer": "Upgrading the Galaxy Sword to the Infinity Blade requires 3 Galaxy Souls and 60 Cinder Shards total, applied across 3 separate forging sessions (each session consumes 1 Galaxy Soul + 20 Cinder Shards). The Forge is located at the top of the Volcano Dungeon on Ginger Island.",
+    "difficulty": "hard",
+    "category": "niche"
+  },
+  {
+    "question": "How do I get the Junimo Plush? I saw something about it being hidden somewhere in town.",
+    "answer": "The Junimo Plush can be obtained at exactly 12:00 PM (noon) on the 28th (last day) of any season by shaking the bush above the playground in the northwest corner of Pelican Town. This is hinted at by Secret Note #13.",
+    "difficulty": "hard",
+    "category": "niche"
+  },
+  {
+    "question": "How do I make blue chickens?",
+    "answer": "After reaching 8 hearts of friendship with Shane, a cutscene triggers where he shows you his blue chicken, Charlie. After this event, any chicken purchased from Marnie's Ranch or hatched in an incubator has a chance of being blue. Blue chickens function identically to white and brown chickens and produce regular eggs.",
+    "difficulty": "medium",
+    "category": "mechanics"
+  },
+  {
+    "question": "How do I raise a dinosaur?",
+    "answer": "You need to find a Dinosaur Egg (from artifact spots, fishing treasure chests, Skull Cavern Pepper Rex drops, or the Crane Game in the Movie Theater) and place it in an Incubator inside a Big or Deluxe Coop. After about 12 days it will hatch into a Dinosaur, which produces a new Dinosaur Egg every 7 days. Do not donate your first Dinosaur Egg to the museum — incubate it first so you can get more.",
+    "difficulty": "medium",
+    "category": "mechanics"
+  }
+]
