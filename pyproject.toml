@@ -5,11 +5,17 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
+    "anywidget>=0.9.21",
     "beautifulsoup4>=4.14.3",
     "fastapi[standard]>=0.135.2",
     "httpx>=0.28.1",
     "markdownify>=1.2.2",
+    "matplotlib>=3.10.8",
+    "nbformat>=5.10.4",
+    "numpy>=2.4.4",
     "openai>=2.30.0",
+    "pandas>=3.0.2",
+    "plotly>=6.6.0",
     "python-dotenv>=1.2.2",
     "semantic-text-splitter>=0.29.0",
     "supabase>=2.28.3",
