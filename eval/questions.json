@@ -18,8 +18,8 @@
     "category": "characters"
   },
   {
-    "question": "I got a heart event with Caroline and she taught me a recipe — what was it and how do I trigger it again on my other save?",
-    "answer": "Caroline teaches the player the Tea Sapling recipe. The event is triggered by entering the sunroom via the door in Caroline's kitchen between 9:00 AM and 5:00 PM on a non-rainy day, after reaching 2 hearts of friendship with her.",
+    "question": "How do i get the tea sapling recipe?",
+    "answer": "To get the Tea Sapling recipe in Stardew Valley, you need to raise your friendship with Caroline to 2 hearts. She'll then send you a letter in the mail with the recipe included.",
     "difficulty": "hard",
     "category": "characters"
   },
@@ -121,7 +121,7 @@
   },
   {
     "question": "How do I make blue chickens?",
-    "answer": "After reaching 8 hearts of friendship with Shane, a cutscene triggers where he shows you his blue chicken, Charlie. After this event, any chicken purchased from Marnie's Ranch or hatched in an incubator has a chance of being blue. Blue chickens function identically to white and brown chickens and produce regular eggs.",
+    "answer": "After reaching 8 hearts of friendship with Shane, a cutscene triggers where he shows you his blue chicken, Charlie. After this event, any chicken purchased from Marnie's Ranch has a chance of being blue. Blue chickens function identically to white and brown chickens and produce regular eggs.",
     "difficulty": "medium",
     "category": "mechanics"
   },

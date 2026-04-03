@@ -40,7 +40,8 @@ Key guidelines:
 - A 3 requires actual errors or major omissions that would mislead the player.
 - Rewording or paraphrasing is fine. Judge meaning, not phrasing.
 - If the answer includes extra correct information beyond the reference, 
-  that's still a 5."""
+  that's still a 5.
+- Don't penalize too harshly lack of information that wasn't asked for, but is in the reference answer. (e.g. question about parsnip sell price, but reference answer also includes where to buy seeds)"""
 
     with open("questions.json", "r") as f:
         questions = json.load(f)
@@ -69,7 +70,7 @@ Key guidelines:
         else:
             chat_response = openai_client.responses.create(
                 model="gpt-5-nano",
-                input="You are a helpful assistant for answering questions about the game Stardew Valley (without any mods, PC version). Answer the following question: "
+                input="You are a helpful assistant for answering questions about the game Stardew Valley (without any mods, PC version). Answer the following question to the best of you ability without asking any follow-up questions: "
                 + q["question"],
                 reasoning={"effort": "low"},
             )
@@ -103,7 +104,8 @@ Key guidelines:
         )
 
     with open(
-        f"outputs/evaluated_questions_{'rag' if rag else 'non-rag'}.json", "w"
+        f"outputs/{'rag' if rag else 'non-rag'}_v3.json",
+        "w",
     ) as f:
         json.dump(evaluated_questions, f, indent=2)
 
