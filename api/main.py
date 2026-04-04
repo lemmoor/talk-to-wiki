@@ -1,18 +1,29 @@
-import logging, os
+import os
 from time import time
 from dotenv import load_dotenv
-from fastapi import FastAPI
-from pydantic import BaseModel
+from fastapi import FastAPI, HTTPException
+from fastapi.middleware.cors import CORSMiddleware
+import logfire
+from pydantic import BaseModel, Field
+from typing import List
 from supabase import create_client
 from openai import OpenAI
 
 load_dotenv()
-logger = logging.getLogger(__name__)
-logger.setLevel(logging.DEBUG)
 
 app = FastAPI()
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+logfire.configure()
+logfire.instrument_fastapi(app)
 
 openai_client = OpenAI()
+logfire.instrument_openai(openai_client)
 
 url = os.environ.get("SUPABASE_URL")
 key = os.environ.get("SUPABASE_KEY")
@@ -21,6 +32,20 @@ supabase_client = create_client(url, key)  # type: ignore
 
 class AskRequest(BaseModel):
     query: str
+
+
+class Source(BaseModel):
+    url: str = Field(description="The URL of the source used to generate the answer")
+    title: str = Field(description="The title of the source")
+
+
+class RequestAnswer(BaseModel):
+    answer: str = Field(
+        description="The answer to the user's questions, based on the provided documents. The used does not see or know of the documents."
+    )
+    sources: List[Source] = Field(
+        description="List of sources and titles used to generate the answer."
+    )
 
 
 @app.post("/ask")
@@ -40,19 +65,16 @@ def ask(request: AskRequest):
         ).execute()
 
         if not supabase_response.data:
-            logger.error(
-                f"No data returned from Supabase for query: {query}. Response: {supabase_response}"
+            raise HTTPException(
+                status_code=404, detail="No relevant information found."
             )
-            return {
-                "query": query,
-                "response": "I couldn't find any relevant information. Sorry :(",
-            }
 
         documents = "\n\n"
         for doc in supabase_response.data:
             documents += f"Source URL: {doc['source_url']}\nTitle: {doc['title']}\nText:\n{doc['text']}\n==================\n"
 
         prompt = """You are a helpful assistant for answering questions about the game Stardew Valley, based on information from the Stardew Valley Wiki. Use only the following information from the wiki to answer the QUESTION. If you don't know the answer, say you don't know. Don't try to use any information that isn't in the provided DOCUMENTS. Every document has it's source URL provided, cite the url of relevant sources in the answer.
+Some documents contain data from wiki tables that were flattened from multi-row, multi-header tables. Headers or values may appear repeated or out of order — use context to interpret them correctly.
 
 QUESTION: {query}
 
@@ -60,19 +82,21 @@ DOCUMENTS: {documents}
 
 respond to the QUESTION based on the information in the DOCUMENTS"""
 
-        chat_response = openai_client.responses.create(
+        chat_response = openai_client.responses.parse(
             model="gpt-5-nano",
             input=prompt.format(query=query, documents=documents),
             reasoning={"effort": "low"},
+            text_format=RequestAnswer,
         )
 
     except Exception as e:
-        logger.error(
-            f"Error occurred while fetching OpenAI embedding for query: {query}. Error: {e}"
-        )
-        return {"query": query, "response": "Something went wrong. Too bad, so sad :("}
+        logfire.error("Error processing query: {query}", query=query, _exc_info=e)
+        raise HTTPException(status_code=500, detail="Something went wrong.")
 
-    return {"query": query, "response": chat_response.output_text}
+    if not chat_response.output_parsed:
+        raise HTTPException(status_code=500, detail="Failed to generate an answer.")
+
+    return {"query": query, "response": chat_response.output_parsed}
 
 
 @app.get("/health")
