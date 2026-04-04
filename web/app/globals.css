@@ -15,3 +15,23 @@ body {
   color: #1e293b;
   font-family: var(--font-sans), Arial, Helvetica, sans-serif;
 }
+
+.loader {
+  height: 12px;
+  aspect-ratio: 2;
+  --_g: no-repeat radial-gradient(farthest-side, rgb(255 255 255 / 70%) 90%, transparent);
+  background: var(--_g), var(--_g), var(--_g);
+  background-size: 25% 50%;
+  animation: loader 1s infinite linear;
+}
+
+@keyframes loader {
+  0%     { background-position: calc(0*100%/2) 50%, calc(1*100%/2) 50%, calc(2*100%/2) 50% }
+  16.67% { background-position: calc(0*100%/2) 0,   calc(1*100%/2) 50%, calc(2*100%/2) 50% }
+  33.33% { background-position: calc(0*100%/2) 100%,calc(1*100%/2) 0,   calc(2*100%/2) 50% }
+  50%    { background-position: calc(0*100%/2) 50%, calc(1*100%/2) 100%,calc(2*100%/2) 0   }
+  66.67% { background-position: calc(0*100%/2) 50%, calc(1*100%/2) 50%, calc(2*100%/2) 100%}
+  83.33% { background-position: calc(0*100%/2) 50%, calc(1*100%/2) 50%, calc(2*100%/2) 100%}
+  100%   { background-position: calc(0*100%/2) 50%, calc(1*100%/2) 50%, calc(2*100%/2) 50% }
+}
+

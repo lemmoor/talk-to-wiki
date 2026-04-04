@@ -16,7 +16,9 @@ type Message = {
 
 export default function ChatBox() {
   const [query, setQuery] = useState("");
-  const [messages, setMessages] = useState<Message[]>([]);
+  const [messages, setMessages] = useState<Message[]>([
+    { role: "assistant", text: "Ask me anything about Stardew Valley!" },
+  ]);
   const [loading, setLoading] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
@@ -52,12 +54,12 @@ export default function ChatBox() {
           sources: data.response.sources,
         },
       ]);
-    } catch (e) {
+    } catch {
       setMessages([
         userMessage,
         {
           role: "assistant",
-          text: e instanceof Error ? e.message : "Something went wrong. Sorry :(",
+          text: "Something went wrong. Sorry :(",
         },
       ]);
     } finally {
@@ -102,8 +104,8 @@ export default function ChatBox() {
 
         {loading && (
           <div className="flex justify-start">
-            <div className="rounded-md px-4 py-3 bg-white/10 text-sm text-slate-400 animate-pulse">
-              Thinking...
+            <div className="rounded-md px-4 py-3 bg-white/10">
+              <div className="loader" />
             </div>
           </div>
         )}
