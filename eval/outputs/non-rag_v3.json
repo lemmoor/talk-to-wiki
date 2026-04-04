@@ -1,0 +1,156 @@
+[
+  {
+    "question": "When is Penny's birthday and who's her mom?",
+    "answer": "- Penny's birthday: Spring 2\n- Penny's mom: Pam (Pam is Penny's mother; Penny is Pam's daughter)",
+    "reference_answer": "Penny's birthday is Fall 2. Her mother is Pam.",
+    "rating": 3,
+    "justification": "Partially correct: it correctly identifies Pam as Penny\u2019s mother, but Penny\u2019s birthday is wrong. The correct birthday is Fall 2, not Spring 2."
+  },
+  {
+    "question": "What gifts does Haley love? I keep giving her stuff and she hates it.",
+    "answer": "Haley\u2019s two true loves are:\n- Sunflower\n- Pink Cake\n\nGiving her these in larger quantities will boost friendship the most. She also likes many other items (and dislikes or hates some), but Sunflower and Pink Cake are the best gifts for her. If you\u2019re unsure, stick to Sunflower or Pink Cake to improve her approval quickly.",
+    "reference_answer": "Haley's four NPC-specific loved gifts are Coconut, Fruit Salad, Pink Cake, and Sunflower. Notably, Haley is one of the only characters who hates the Prismatic Shard, which is otherwise a universal love.",
+    "rating": 3,
+    "justification": "Partially correct. It correctly identifies Sunflower and Pink Cake as loved gifts, but wrongly implies those are her only loved gifts and omits Coconut and Fruit Salad, which are also Haley-specific loved gifts."
+  },
+  {
+    "question": "I'm confused about Sebastian's family \u2014 how is he related to Robin, Demetrius, and Maru?",
+    "answer": "Sebastian is the son of Robin and Demetrius. Maru is their daughter. So Sebastian and Maru are siblings, and Robin (the carpenter) and Demetrius (the scientist) are their parents.",
+    "reference_answer": "Robin is Sebastian's mother and Maru's mother. Demetrius is Maru's father and Sebastian's stepfather. Sebastian and Maru are half-siblings. Sebastian's biological father is unknown. They all live together at the Carpenter's Shop in the mountains north of Pelican Town.",
+    "rating": 2,
+    "justification": "Mostly wrong. It correctly identifies Robin as Sebastian's mother and Maru as his sibling, but the key relationship details are incorrect: Demetrius is Sebastian's stepfather, not his father, and Sebastian and Maru are half-siblings, not full siblings."
+  },
+  {
+    "question": "How do i get the tea sapling recipe?",
+    "answer": "There isn\u2019t a Tea Sapling recipe in vanilla Stardew Valley (no mods). Tea plants/saplings aren\u2019t a craftable crop you can grow in the base game, so you can\u2019t obtain a Tea Sapling recipe through normal gameplay. If you\u2019re playing with mods, a mod might add tea saplings, but in unmodded PC Stardew Valley there\u2019s no such recipe.",
+    "reference_answer": "To get the Tea Sapling recipe in Stardew Valley, you need to raise your friendship with Caroline to 2 hearts. She'll then send you a letter in the mail with the recipe included.",
+    "rating": 1,
+    "justification": "Completely wrong. In vanilla Stardew Valley, the Tea Sapling recipe does exist; you get it after reaching 2 hearts with Caroline, who mails you the recipe."
+  },
+  {
+    "question": "How much does Starfruit sell for and how long does it take to grow?",
+    "answer": "- Base selling price: 750 gold per Starfruit (unprocessed).\n- Growth time: 13 days from planting to first harvest (in Summer).",
+    "reference_answer": "Starfruit has a base sell price of 750g. It takes 13 days to grow, is a Summer-only crop, and does not regrow after harvest. Starfruit Seeds cost 400g at the Oasis.",
+    "rating": 5,
+    "justification": "The answer correctly gives Starfruit's base sell price (750g) and growth time (13 days), which directly addresses the question. It is accurate and sufficiently specific; the omitted details in the reference were not necessary for this question."
+  },
+  {
+    "question": "I just found an Ancient Seed \u2014 how long until I get fruit from it and does it keep producing?",
+    "answer": "- Growing time: 28 days to mature.\n- After it matures: it produces Ancient Fruit every 7 days.\n- Is it perennial: yes\u2014the Ancient Fruit plant is perennial. You don\u2019t need to replant after each harvest, and it will keep producing (season permitting). It will stop producing in winter like other crops.",
+    "reference_answer": "Ancient Fruit takes 28 days to grow to maturity. After the first harvest, it regrows and produces another fruit every 7 days. It grows in Spring, Summer, and Fall (dies in Winter outdoors). Its base sell price is 550g.",
+    "rating": 5,
+    "justification": "Fully correct for what was asked: 28 days to mature, then regrows every 7 days, and keeps producing without replanting during Spring/Summer/Fall, dying in Winter outdoors. The omitted sell price is not relevant to the question."
+  },
+  {
+    "question": "I got some Coffee Beans \u2014 how do I grow them and turn them into Coffee?",
+    "answer": "Here\u2019s how to grow Coffee Beans and turn them into Coffee in the base game (no mods):\n\nGrowing Coffee Beans\n- Get Coffee Beans seeds: You\u2019ll find Coffee Beans as a crop seed that you can purchase from stores (like Pierre\u2019s) after you\u2019ve unlocked it in the shop.\n- Planting: Till a patch of soil and plant the Coffee Beans like other crops. Each planted bean is a seed that can grow into a Coffee Plant.\n- Seasons and care: Coffee Plants take time to mature (about 10 days). Water them daily. They\u2019ll grow into a coffee shrub that produces more beans.\n- Harvesting: Once mature, you\u2019ll harvest Coffee Beans (you\u2019ll get multiple beans per plant). You can replant those beans to grow more Coffee Plants.\n\nTurning Coffee Beans into Coffee\n- Use a Keg: Place Coffee Beans (or harvested Coffee Beans) into a Keg to ferment into Coffee. The Keg processes crops into beverages; Coffee is the end product.\n- Time and output: It takes about a day in the Keg to produce Coffee. You\u2019ll end up with Coffee that you can drink for a speed/energy boost or sell for profit.\n\nNotes\n- Coffee Plants are perennials in the sense that you keep the plant and it keeps producing beans after each harvest; you just replant the beans you harvest or let the plant self-propagate.\n- You can drink Coffee for a temporary speed boost and energy, which helps with farming tasks.\n\nIf you want, I can outline exact production timelines or give a quick farming plan to maximize Coffee bean yield.",
+    "reference_answer": "Coffee Beans take 10 days to grow to maturity, then produce a new harvest every 2 days. Each harvest yields 4 Coffee Beans. Placing 5 Coffee Beans in a Keg produces Coffee in 2 in-game hours, which sells for 150g. Coffee Beans grow in both Spring and Summer.",
+    "rating": 3,
+    "justification": "Gets the basic loop right: plant Coffee Beans, wait about 10 days, harvest more beans, and use a Keg to make Coffee. But it misses or gets wrong several important specifics from the reference: Coffee Beans need 5 per Keg, Coffee takes 2 in-game hours (not about a day), and the answer adds incorrect/misleading claims like buying them from Pierre\u2019s after unlocking and plants 'self-propagating.' It also omits that they grow in Spring and Summer and produce every 2 days with 4 beans per harvest."
+  },
+  {
+    "question": "How is the sell price for jelly and pickles calculated? Also, which crops can become giant crops?",
+    "answer": "Here\u2019s what I can tell you clearly about vanilla Stardew Valley (PC, no mods):\n\nSell price of jelly and pickles\n- How they\u2019re made: Jelly is made from any fruit using a Preserves Jar; Pickles are made from any vegetable (or squash) using a Preserves Jar.\n- How the selling price is determined: The sale price of jelly or pickles is based on the base selling value of the fruit or vegetable you used, multiplied by a fixed modifier that applies to artisan goods produced with the preserves jar. In other words:\n  - Jelly price = (base selling price of the fruit) \u00d7 (artisan goods multiplier for jelly)\n  - Pickles price = (base selling price of the vegetable) \u00d7 (artisan goods multiplier for pickles)\n- Important note: The exact multiplier is the same across all jelly/pickle outputs (it\u2019s the standard \u201cartisan goods\u201d multiplier used for preserves produced in jars). In practice, this means stronger fruits/veggies yield stronger jelly/pickle values, but there isn\u2019t a per-fruit different multiplier for jelly vs pickle beyond the general artisan goods system.\n\nIf you want a concrete example, you\u2019d plug in the base price of a given fruit/vegetable and multiply by the artisan multiplier used for Preserves Jar products (the multiplier is the same for all jelly/pickle products; the exact number is typically shown in-game when you hover over the Preserves Jar\u2019s output in the crafting UI).\n\nWhich crops can become giant crops\n- Giant crops can occur when you plant a 3x3 grid of the same crop and water all of them. After the crop grows to maturity, you\u2019ll get one \u201cGiant Crop\u201d that yields multiple items of that crop type.\n- This works for most standard crops that you can plant in a season (i.e., crops with a normal seasonal growth cycle). The Giant Crop will drop a bunch of that crop (and sometimes extra items, depending on the crop) when harvested.\n- Practical tip: To attempt a giant crop, plant 9 of the same crop in a 3x3 square, water them all, and wait for them to mature. If you have the right conditions (season, weather, etc.), you\u2019ll get a Giant Crop.\n\nIf you want exact numeric prices for jelly/pickles (e.g., Jelly from Apple, Jelly from Peach, Pickle from Cucumber, etc.), I\u2019d suggest checking the in-game price values or a current Stardew wiki page, since the base crop prices and the artisan multiplier can be easy to mix up and may vary slightly with game patches.",
+    "reference_answer": "The Preserves Jar formula is (2 \u00d7 Base Crop Value) + 50g. Input quality does not affect the output price; only base value matters. Processing takes 4,000 in-game minutes (~2-3 days). The giant crop-eligible crops are Cauliflower (Spring), Melon (Summer), Pumpkin (Fall), Powdermelon (Winter), and Qi Fruit (year-round). Giant crops must be planted in a 3\u00d73 grid of the same type.",
+    "rating": 2,
+    "justification": "Mostly wrong. It correctly says preserves output depends on the base crop value and that giant crops involve a 3\u00d73 grid of the same mature crop, but it gives the wrong pricing rule for jelly/pickles (it is not a simple multiplier; it is (2 \u00d7 base value) + 50g) and incorrectly claims giant crops work for most standard crops instead of the specific eligible ones: Cauliflower, Melon, Pumpkin, Powdermelon, and Qi Fruit."
+  },
+  {
+    "question": "Where do I find Iron Ore in the mines, and what do I get for reaching the bottom?",
+    "answer": "- Iron Ore location: In the Mines, iron ore appears as ore nodes in rock on the lower floors. It starts showing up around floor 40 and is most common on floors roughly 40\u201379. You\u2019ll break rocks with your pickaxe to get iron ore.\n\n- Reaching the bottom: There isn\u2019t a special prize just for reaching the bottom floor (level 120). It\u2019s basically the end of the regular mine floors, after which you can either head back up or keep exploring deeper if you want. (Note: you can use the mine elevator to travel between certain floors once you\u2019ve progressed, but there\u2019s no unique reward strictly for hitting level 120.)",
+    "reference_answer": "Iron Ore primarily appears on floors 41-79 (the frozen/ice section). Floor 120 awards the Skull Key, which is used to access the Skull Cavern in the Calico Desert. The Mines have 120 floors divided into three 40-floor sections: copper ore (1-39), iron ore (41-79), and gold ore (81-119).",
+    "rating": 3,
+    "justification": "The answer correctly identifies Iron Ore as being in the mid/lower mine floors, roughly the 40-79 range, which matches the frozen section closely enough. However, it is wrong about the reward for reaching floor 120: you do get the Skull Key. Because it gets the ore location mostly right but gives a key incorrect detail about the bottom reward, this is only partially correct."
+  },
+  {
+    "question": "What do I need to craft an Iridium Sprinkler and how big is the area it waters?",
+    "answer": "- Crafting recipe: Iridium Sprinkler requires\n  - 1 Battery Pack\n  - 1 Iridium Bar\n  - 1 Gold Bar\n  And you craft it at the Crafting Bench.\n\n- Watering area: It waters 24 tiles in a 5x5 area around the sprinkler (the center tile is where the sprinkler sits and is not watered).",
+    "reference_answer": "The Iridium Sprinkler requires 1 Gold Bar, 1 Iridium Bar, and 1 Battery Pack to craft. It is unlocked at Farming Level 9 and waters 24 adjacent tiles (a 5\u00d75 area with the sprinkler in the center). It can also be purchased from Krobus every Friday for 10,000g.",
+    "rating": 3,
+    "justification": "The materials and watering area are correct: 1 Gold Bar, 1 Iridium Bar, 1 Battery Pack, and 24 tiles in a 5\u00d75 pattern. However, it incorrectly says you craft it at the Crafting Bench; the Crafting Bench is not required to craft sprinklers. Because it includes wrong information on the crafting method, this is partially correct rather than fully correct."
+  },
+  {
+    "question": "How much does it cost to upgrade my tools at the blacksmith? I want to plan ahead.",
+    "answer": "Here are the standard upgrade costs for tools at the Blacksmith in Stardew Valley (vanilla, PC version):\n\n- Copper upgrade: 200g (per tool)\n- Steel upgrade: 1,000g (per tool)\n- Gold upgrade: 5,000g (per tool)\n- Iridium upgrade: 20,000g (per tool)\n\nNotes:\n- Each upgrade is for a specific tool (axe, pickaxe, hoe, watering can, etc.).\n- Upgrades take 2 in-game days to complete.\n- You can upgrade multiple tools, paying the listed price for each one.\n\nIf you\u2019re planning ahead, multiply the price by the number of tools you want upgraded, and factor in having to wait 2 days for each completed upgrade.",
+    "reference_answer": "Each upgrade requires 5 bars of the corresponding metal plus a gold fee: Copper = 5 Copper Bars + 2,000g; Steel = 5 Iron Bars + 5,000g; Gold = 5 Gold Bars + 10,000g; Iridium = 5 Iridium Bars + 25,000g. Each upgrade takes 2 days to complete, and upgrades must be done sequentially.",
+    "rating": 2,
+    "justification": "Mostly wrong. The upgrade prices listed are incorrect for every tier, and the answer omits the required 5 metal bars for each upgrade. It also says you can upgrade multiple tools, whereas upgrades must be done one at a time/sequentially. The only clearly correct part is that tool upgrades take 2 days."
+  },
+  {
+    "question": "How much gold do I need to complete all the Vault bundles, and what's the reward?",
+    "answer": "Short answer: Completing all Vault bundles in the Community Center costs a total of 25,000 gold and unlocks the Desert Trader traveling cart visit. \n\nIf you want, I can break down the exact gold required for each individual Vault bundle and confirm the reward for completing them all.",
+    "reference_answer": "The Vault bundles cost a total of 42,500g (broken down as 2,500g + 5,000g + 10,000g + 25,000g). They require only gold, no items. Completing all Vault bundles repairs the Bus at the Bus Stop, granting access to the Calico Desert.",
+    "rating": 2,
+    "justification": "Mostly wrong. It gives the wrong total cost (25,000g instead of 42,500g) and the wrong reward. The actual reward is repairing the Bus to access the Calico Desert, not unlocking a Desert Trader/traveling cart visit. It has only a small grain of relevance because 25,000g is one of the individual bundle amounts and the Desert is related to the Vault reward."
+  },
+  {
+    "question": "I donated all four Dwarf Scrolls to the museum \u2014 what do I get?",
+    "answer": "After you donate all four Dwarf Scrolls to the Museum, the Dwarf Scrolls exhibit is completed. The reward is a cash prize of about 3,000 gold and you also receive a Dwarf statue that you can place in your house/farm as a decorative item.",
+    "reference_answer": "The player receives the Dwarvish Translation Guide from Gunther. This allows the player to understand and communicate with the Dwarf in the Mines and the Volcano Dungeon. To physically reach the Dwarf, the player must break a rock near the mine entrance using at least a Steel Pickaxe or a Cherry Bomb.",
+    "rating": 1,
+    "justification": "The answer is incorrect. Donating all four Dwarf Scrolls rewards the Dwarvish Translation Guide from Gunther, not gold or a decorative statue."
+  },
+  {
+    "question": "When is the Stardew Valley Fair and how many Star Tokens do I need for the Stardrop?",
+    "answer": "- Stardew Valley Fair date: Fall 16 (the 16th of Fall, in Pelican Town).\n- Star Tokens for the Stardrop: 200 Star Tokens.\n\nYou earn Star Tokens by playing the fair\u2019s games and activities during the event.",
+    "reference_answer": "The Stardew Valley Fair is held on Fall 16 (9:00 AM to 3:00 PM in Pelican Town). The Stardrop costs 2,000 Star Tokens and is a one-time purchase. Winning 1st place in the Grange Display contest awards 1,000 Star Tokens.",
+    "rating": 3,
+    "justification": "The answer correctly states that the Stardew Valley Fair is on Fall 16, but it gives the wrong Stardrop cost: it says 200 Star Tokens instead of 2,000. Since one major part is correct and the other key detail is incorrect, this is only partially correct."
+  },
+  {
+    "question": "There's some war mentioned in the game \u2014 who's fighting who and which character was involved?",
+    "answer": "In Stardew Valley lore there\u2019s a referenced conflict called the War of Ferngill. It\u2019s described as a civil/colonial style conflict between the Ferngill Republic and the Joja Corporation/government that existed in the past. One notable figure tied to that backstory is the character known as the \u201cGovernor\u201d of Ferngill (the lore mentions this era and its veterans), but the game doesn\u2019t put you into an active combat role. It\u2019s mostly background lore about what happened in the region before the game\u2019s events.",
+    "reference_answer": "The Ferngill Republic and the Gotoro Empire are the two warring nations. Kent served in the Ferngill Republic's army and was held in a Gotoro prison camp. He returns to Pelican Town at the beginning of Spring, Year 2, reuniting with his wife Jodi and sons Sam and Vincent.",
+    "rating": 2,
+    "justification": "Mostly wrong. It correctly recognizes there is a Ferngill-related war in the lore, but it incorrectly says the conflict is with Joja/government and names the wrong involved character. The correct answer is Ferngill Republic vs. Gotoro Empire, and Kent is the character who served in the war and was imprisoned by Gotoro."
+  },
+  {
+    "question": "I'm going the Joja route \u2014 how much does each project on the development form cost?",
+    "answer": "Here are the Joja Development Form project costs (base game, no mods). The form lists several upgrades you can purchase with gold once you\u2019re on the Joja route; each project has a set gold cost shown on the form.\n\n- 5,000 gold\n- 15,000 gold\n- 30,000 gold\n- 50,000 gold\n- 100,000 gold\n- 150,000 gold\n- 200,000 gold\n\nNote: The exact number of projects and the specific order can depend on the in-game text/patch, but typically the upgrades escalate in price from around 5k up to 200k. If you\u2019re in-game, check the Development Form itself in the Joja Mart warehouse\u2014the prices shown there are the authoritative ones for your save.",
+    "reference_answer": "The five Joja projects cost: Bus Repair \u2014 40,000g, Minecarts \u2014 15,000g, Bridge (Quarry) \u2014 25,000g, Greenhouse \u2014 35,000g, Glittering Boulder Removal \u2014 20,000g. The total is 135,000g for all five projects. The JojaMart membership itself costs an additional 5,000g, bringing the grand total to 140,000g.",
+    "rating": 2,
+    "justification": "Mostly wrong. The Joja Development Form has five projects with specific costs (15k, 20k, 25k, 35k, 40k), plus a separate 5k membership. This answer gives an incorrect list of seven escalating prices, omits the project names, and adds false caveats about the number/order depending on patch. It has only a small grain of truth in mentioning gold costs and including 15,000g/5,000g among the numbers."
+  },
+  {
+    "question": "How do I get the Galaxy Sword? I heard it's in the desert somewhere.",
+    "answer": "Short answer: The Galaxy Sword is a late-game item you get from a hidden chest inside the Calico Desert dungeon, not from any regular shop. Here\u2019s the reliable gist of how to obtain it in the vanilla (no mods) PC version:\n\n- Get access to the desert: Fix the bus (complete the \u201cDesert\u201d storyline) so you can travel to the Calico Desert.\n- Enter the desert dungeon: In the desert, you\u2019ll find a small, hidden dungeon area behind the desert\u2019s main temple entrance. You need to clear it out and reach its deeper chamber.\n- Find the chest: Deep inside this dungeon is a hidden chest that contains the Galaxy Sword.\n\nNotes:\n- The Galaxy Sword is a late-game item, so you\u2019ll typically be looking to do this after you\u2019ve progressed enough in the game (newer players might not reach it in their first year).\n- You don\u2019t need to craft it or buy it from a shop in the desert; it\u2019s obtained from the dungeon chest as a rare loot drop.\n\nIf you want, I can outline the exact steps to reach the desert dungeon and map out the route from the bus stop to the dungeon entrance, including any required keys or obstacles you\u2019ll face in the desert.",
+    "reference_answer": "The player must hold a Prismatic Shard and walk to the centermost tile between the Three Pillars in the Calico Desert. This consumes the Prismatic Shard and awards the Galaxy Sword. If lost, it can be repurchased from Marlon at the Adventurer's Guild for 50,000g. Obtaining it also unlocks the Galaxy Hammer and Galaxy Dagger for purchase.",
+    "rating": 2,
+    "justification": "Mostly wrong. It correctly places the Galaxy Sword in the Calico Desert and implies you need desert access, but the actual method is completely incorrect: there is no hidden desert dungeon or chest. The real way is to bring a Prismatic Shard to the center tile between the Three Pillars, which consumes the shard and gives the sword."
+  },
+  {
+    "question": "I found Secret Note #23 about bringing something to the Secret Woods \u2014 what do I bring and what happens?",
+    "answer": "I\u2019m not confident I\u2019m remembering Secret Note #23 exactly. If you want the precise item and what happens, the quickest reliable source is the Stardew Valley Wiki (Secret Notes page), which lists each note with its exact text, required item, and the resulting event or reward.\n\nIf you\u2019d like, I can describe how to navigate to the Secret Woods in case you\u2019re unsure where it is, or help with any other notes you\u2019ve found.",
+    "reference_answer": "The player must bring Maple Syrup to the Secret Woods (between 6:00 AM and 7:00 PM) to trigger a cutscene with a bear. This grants Bear's Knowledge, which permanently triples the sell price of Blackberries and Salmonberries.",
+    "rating": 1,
+    "justification": "The answer does not provide the required item or outcome at all. It only suggests checking the wiki, so it fails to answer the question."
+  },
+  {
+    "question": "I want to forge my Galaxy Sword into the Infinity Blade \u2014 what materials do I need exactly?",
+    "answer": "In the vanilla (unmodded) Stardew Valley, you cannot forge a Galaxy Sword into an Infinity Blade. There is no upgrade path or recipe that turns the Galaxy Sword into an Infinity Blade. The Infinity Blade isn\u2019t a forgeable upgrade in the base game.",
+    "reference_answer": "Upgrading the Galaxy Sword to the Infinity Blade requires 3 Galaxy Souls and 60 Cinder Shards total, applied across 3 separate forging sessions (each session consumes 1 Galaxy Soul + 20 Cinder Shards). The Forge is located at the top of the Volcano Dungeon on Ginger Island.",
+    "rating": 1,
+    "justification": "Completely wrong. In vanilla Stardew Valley, you can upgrade a Galaxy Sword into the Infinity Blade at the Forge using 3 Galaxy Souls and 60 Cinder Shards total across 3 separate forge attempts."
+  },
+  {
+    "question": "How do I get the Junimo Plush? I saw something about it being hidden somewhere in town.",
+    "answer": "In vanilla Stardew Valley there is a hidden collectible called the Junimo Plush that isn\u2019t sold in shops. It\u2019s a very obscure find and isn\u2019t something you can simply buy or obtain from a standard quest. The most reliable way to learn the exact method is to check the Stardew Valley Wiki (the game\u2019s community-driven guide). It documents the conditions, locations, and chances to obtain the plush, including whether it\u2019s tied to a specific festival, event, or in-game note/quest.\n\nIf you want a quick pointer: search for \u201cJunimo Plush\u201d on the Stardew Valley Wiki and read the current item page, which will tell you:\n- How to obtain it (which activity, day, season, or event triggers it)\n- Where it can appear (location in town or in a chest/hidden area)\n- Any prerequisites (Community Center status, completed quests, etc.)\n\nIf you\u2019d like, I can summarize the current wiki steps for you once you share the exact page you\u2019re looking at.",
+    "reference_answer": "The Junimo Plush can be obtained at exactly 12:00 PM (noon) on the 28th (last day) of any season by shaking the bush above the playground in the northwest corner of Pelican Town. This is hinted at by Secret Note #13.",
+    "rating": 2,
+    "justification": "Mostly wrong. It never gives the actual method (shake the bush above the playground at exactly noon on the 28th of any season) and instead defers to the wiki. It does contain a small grain of truth by saying it\u2019s a hidden collectible and not shop-bought, but the vague speculation about festivals/events/chests/prerequisites is misleading."
+  },
+  {
+    "question": "How do I make blue chickens?",
+    "answer": "In vanilla Stardew Valley (PC, no mods), there is no way to purposely \u201cmake\u201d a blue chicken. Chickens hatch in a few colors (brown, white, and black) and you can breed them, but blue is not a color that can be obtained through normal gameplay. If you want a blue-looking bird, you\u2019d need a mod; base game options don\u2019t include blue chickens.",
+    "reference_answer": "After reaching 8 hearts of friendship with Shane, a cutscene triggers where he shows you his blue chicken, Charlie. After this event, any chicken purchased from Marnie's Ranch has a chance of being blue. Blue chickens function identically to white and brown chickens and produce regular eggs.",
+    "rating": 1,
+    "justification": "The answer is incorrect. In vanilla Stardew Valley, blue chickens are obtainable after reaching 8 hearts with Shane and seeing his blue chicken event; then chickens bought from Marnie can randomly be blue. Saying blue chickens are not available in normal gameplay and require a mod is false."
+  },
+  {
+    "question": "How do I raise a dinosaur?",
+    "answer": "Short answer: you can\u2019t raise a dinosaur in vanilla Stardew Valley (PC, no mods).\n\nIn the base game, there are only standard farm animals (chickens, cows, sheep, goats, pigs) and an occasional special event/quest, but no feature to hatch or raise a dinosaur. Dinosaurs (and any dinosaur-related mechanics like hatching eggs or keeping a dinosaur as a farm animal) aren\u2019t part of the official gameplay you can interact with in the vanilla game.",
+    "reference_answer": "You need to find a Dinosaur Egg (from artifact spots, fishing treasure chests, Skull Cavern Pepper Rex drops, or the Crane Game in the Movie Theater) and place it in an Incubator inside a Big or Deluxe Coop. After about 12 days it will hatch into a Dinosaur, which produces a new Dinosaur Egg every 7 days. Do not donate your first Dinosaur Egg to the museum \u2014 incubate it first so you can get more.",
+    "rating": 1,
+    "justification": "Completely wrong. In vanilla Stardew Valley you can hatch and raise a Dinosaur by incubating a Dinosaur Egg in a Big or Deluxe Coop. The answer incorrectly says this is not possible at all."
+  }
+]
