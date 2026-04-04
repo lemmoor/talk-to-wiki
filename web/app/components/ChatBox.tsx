@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useRef, useEffect, FormEvent } from "react";
+import { FaArrowRight } from "react-icons/fa";
 
 type Message = {
   role: "user" | "assistant";
@@ -40,7 +41,7 @@ export default function ChatBox() {
         userMessage,
         {
           role: "assistant",
-          text: "Something went wrong. Is the API running?",
+          text: "Something went wrong. Sorry :(",
         },
       ]);
     } finally {
@@ -49,7 +50,7 @@ export default function ChatBox() {
   }
 
   return (
-    <div className="h-full flex flex-col rounded-2xl bg-[rgb(209_248_255/67%)] backdrop-blur-sm shadow-lg overflow-hidden">
+    <div className="h-full flex flex-col rounded-2xl bg-[rgb(209_248_255/20%)] backdrop-blur-sm shadow-lg overflow-hidden">
       <div className="flex-1 overflow-y-auto p-6 flex flex-col gap-4">
         {messages.map((msg, i) => (
           <div
@@ -57,10 +58,10 @@ export default function ChatBox() {
             className={`flex ${msg.role === "user" ? "justify-end" : "justify-start"}`}
           >
             <div
-              className={`max-w-[75%] rounded-xl px-4 py-3 text-sm leading-relaxed ${
+              className={`max-w-[75%] rounded-md px-4 py-3 text-sm leading-relaxed ${
                 msg.role === "user"
-                  ? "bg-sky-500 text-white"
-                  : "bg-white/80 text-slate-800"
+                  ? "bg-[rgb(0_21_64)] text-white"
+                  : "bg-white/20 text-slate-200"
               }`}
             >
               <p className="whitespace-pre-wrap">{msg.text}</p>
@@ -70,7 +71,7 @@ export default function ChatBox() {
 
         {loading && (
           <div className="flex justify-start">
-            <div className="rounded-xl px-4 py-3 bg-white/80 text-sm text-slate-500 animate-pulse">
+            <div className="rounded-md px-4 py-3 bg-white/10 text-sm text-slate-400 animate-pulse">
               Thinking...
             </div>
           </div>
@@ -81,21 +82,21 @@ export default function ChatBox() {
 
       <form
         onSubmit={handleSubmit}
-        className="flex gap-2 p-4 border-t border-slate-200/50"
+        className="flex gap-2 p-4 border-t border-white/10"
       >
         <input
           type="text"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           placeholder="Ask a question..."
-          className="flex-1 rounded-lg bg-white/80 px-4 py-2 text-sm outline-none placeholder:text-slate-400 focus:ring-2 focus:ring-sky-300"
+          className="flex-1 rounded-md bg-white/10 border border-white/20 px-4 py-3 text-sm text-white outline-none placeholder:text-slate-400 focus:border-white/40"
         />
         <button
           type="submit"
           disabled={loading || !query.trim()}
-          className="rounded-lg bg-sky-500 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-sky-600 disabled:opacity-50 disabled:cursor-not-allowed"
+          className="rounded-md border cursor-pointer border-white/20 bg-transparent px-4 py-3 text-sm text-white transition-colors hover:border-white/40 disabled:opacity-50 disabled:cursor-not-allowed"
         >
-          Ask
+          <FaArrowRight />
         </button>
       </form>
     </div>
