@@ -1,5 +1,4 @@
 import os
-from time import time
 from dotenv import load_dotenv
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
@@ -11,10 +10,14 @@ from openai import OpenAI
 
 load_dotenv()
 
+
 app = FastAPI()
+
+allowed_origins = os.environ.get("ALLOWED_ORIGINS", "http://localhost:3000").split(",")
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=allowed_origins,
     allow_methods=["*"],
     allow_headers=["*"],
 )
@@ -41,7 +44,7 @@ class Source(BaseModel):
 
 class RequestAnswer(BaseModel):
     answer: str = Field(
-        description="The answer to the user's questions, based on the provided documents. The used does not see or know of the documents."
+        description="The answer to the user's questions, based on the provided documents. The user does not see or know of the documents."
     )
     sources: List[Source] = Field(
         description="List of sources and titles used to generate the answer."
@@ -73,8 +76,9 @@ def ask(request: AskRequest):
         for doc in supabase_response.data:
             documents += f"Source URL: {doc['source_url']}\nTitle: {doc['title']}\nText:\n{doc['text']}\n==================\n"
 
-        prompt = """You are a helpful assistant for answering questions about the game Stardew Valley, based on information from the Stardew Valley Wiki. Use only the following information from the wiki to answer the QUESTION. If you don't know the answer, say you don't know. Don't try to use any information that isn't in the provided DOCUMENTS. Every document has it's source URL provided, cite the url of relevant sources in the answer.
+        prompt = """You are a helpful assistant for answering questions about the game Stardew Valley, based on information from the Stardew Valley Wiki. Use only the following information from the wiki to answer the QUESTION. If you don't know the answer, say you don't know. Don't try to use any information that isn't in the provided DOCUMENTS. Cite the sources in the relevant json field, never in the answer text itself.
 Some documents contain data from wiki tables that were flattened from multi-row, multi-header tables. Headers or values may appear repeated or out of order — use context to interpret them correctly.
+Try to give as much information as you can, with useful tip and tricks or recommendations following from the documents.
 
 QUESTION: {query}
 
