@@ -5,7 +5,8 @@ from fastapi.middleware.cors import CORSMiddleware
 import logfire
 from pydantic import BaseModel, Field
 from typing import List
-from supabase import create_client
+from psycopg.rows import dict_row
+from psycopg_pool import ConnectionPool
 from openai import OpenAI
 
 load_dotenv()
@@ -28,9 +29,13 @@ logfire.instrument_fastapi(app)
 openai_client = OpenAI()
 logfire.instrument_openai(openai_client)
 
-url = os.environ.get("SUPABASE_URL")
-key = os.environ.get("SUPABASE_KEY")
-supabase_client = create_client(url, key)  # type: ignore
+db_pool = ConnectionPool(
+    conninfo=os.environ.get("DATABASE_URL", ""),
+    min_size=0,
+    max_size=5,
+    kwargs={"row_factory": dict_row},
+    open=True,
+)
 
 
 class AskRequest(BaseModel):
@@ -59,21 +64,37 @@ def ask(request: AskRequest):
             input=query, model="text-embedding-3-small"
         )
 
-        supabase_response = supabase_client.rpc(
-            "match_chunks",
-            {
-                "query_embedding": openai_response.data[0].embedding,
-                "match_count": 5,
-            },
-        ).execute()
+        with db_pool.connection() as conn:
+            matched_chunks = conn.execute(
+                """
+                with top_chunks as (
+                    select title, source_url, chunk_index,
+                           1 - (embedding <=> %(query_embedding)s::vector) as similarity
+                    from wiki_pages
+                    order by embedding <=> %(query_embedding)s::vector
+                    limit 5
+                )
+                select
+                    tc.title,
+                    string_agg(neighbor.text, ' ' order by neighbor.chunk_index) as text,
+                    tc.source_url
+                from top_chunks tc
+                join wiki_pages neighbor
+                  on neighbor.title = tc.title
+                 and neighbor.chunk_index between tc.chunk_index - 1 and tc.chunk_index + 1
+                group by tc.title, tc.source_url, tc.chunk_index, tc.similarity
+                order by tc.similarity desc
+                """,
+                {"query_embedding": str(openai_response.data[0].embedding)},
+            ).fetchall()
 
-        if not supabase_response.data:
+        if not matched_chunks:
             raise HTTPException(
                 status_code=404, detail="No relevant information found."
             )
 
         documents = "\n\n"
-        for doc in supabase_response.data:
+        for doc in matched_chunks:
             documents += f"Source URL: {doc['source_url']}\nTitle: {doc['title']}\nText:\n{doc['text']}\n==================\n"
 
         prompt = """You are a helpful assistant for answering questions about the game Stardew Valley, based on information from the Stardew Valley Wiki. Use only the following information from the wiki to answer the QUESTION. If you don't know the answer, say you don't know. Don't try to use any information that isn't in the provided DOCUMENTS. Cite the sources in the relevant json field, never in the answer text itself.

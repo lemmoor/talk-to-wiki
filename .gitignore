@@ -1,5 +1,7 @@
 .env
-.notes.md
+.venv
+/backups
+notes.md
 /ingestion/data
 
 __pycache__

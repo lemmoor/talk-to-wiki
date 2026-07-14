@@ -1,6 +1,5 @@
 import logging, os, json
 from dotenv import load_dotenv
-from supabase import create_client
 from openai import OpenAI
 from pydantic import BaseModel, Field
 from typing import Literal

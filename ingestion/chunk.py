@@ -6,7 +6,7 @@ from semantic_text_splitter import MarkdownSplitter
 from urllib.parse import quote
 from openai import OpenAI
 from dotenv import load_dotenv
-from supabase import create_client, Client
+import psycopg
 
 
 load_dotenv()
@@ -22,15 +22,25 @@ class EmbeddingRow(TypedDict):
     source_url: str
     text: str
     chunk_index: int
-    embedding: list[float]
+    embedding: str  # vector literal, e.g. "[0.1, 0.2, ...]"
 
 
 def insert_embeddings(rows: list[EmbeddingRow]):
     try:
-        response = supabase_client.table("wiki_pages").insert(rows).execute()  # type: ignore
-        logger.info(f"Inserted {len(rows)} rows into Supabase")
-        return response
+        with db_conn.cursor() as cur:
+            cur.executemany(
+                """
+                insert into wiki_pages
+                    (wiki_page_id, title, source_url, text, chunk_index, embedding)
+                values
+                    (%(wiki_page_id)s, %(title)s, %(source_url)s, %(text)s, %(chunk_index)s, %(embedding)s::vector)
+                """,
+                rows,
+            )
+        db_conn.commit()
+        logger.info(f"Inserted {len(rows)} rows into Postgres")
     except Exception as exception:
+        db_conn.rollback()
         logger.error(f"Error inserting rows: {exception}")
         raise
 
@@ -42,9 +52,7 @@ splitter = MarkdownSplitter.from_tiktoken_model(
 files = os.listdir("data/pages_md")
 openai_client = OpenAI()
 
-url = os.environ.get("SUPABASE_URL")
-key = os.environ.get("SUPABASE_KEY")
-supabase_client = create_client(url, key)  # type: ignore
+db_conn = psycopg.connect(os.environ["DATABASE_URL"])
 page_count = 0
 for file in files:
     with open(f"data/pages_md/{file}", "r") as f:
@@ -83,7 +91,7 @@ for file in files:
                     "source_url": page_url,
                     "text": chunks[i],
                     "chunk_index": i,
-                    "embedding": chunk.embedding,
+                    "embedding": str(chunk.embedding),
                 }
             )
 
